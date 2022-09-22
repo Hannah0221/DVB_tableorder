@@ -1,0 +1,51 @@
+//1
+
+.select-container{
+    display: flex;
+    margin: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+}
+
+p{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center
+}
+
+select{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%,-50%);
+    width: 350px;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    cursor: pointer;
+
+}
+
+select:focus,
+select:hover{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+
+
+//2
+
+

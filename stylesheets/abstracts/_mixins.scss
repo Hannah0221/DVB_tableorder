@@ -1,0 +1,11 @@
+//cart  quantity btn
+
+$transit: 0.3s;
+
+@mixin transition-value($trans-val) {
+	-webkit-transition: all ease $trans-val;
+		 -moz-transition: all ease $trans-val;
+			-ms-transition: all ease $trans-val;
+			 -o-transition: all ease $trans-val;
+					transition: all ease $trans-val;
+}

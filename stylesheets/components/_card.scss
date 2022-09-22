@@ -1,0 +1,153 @@
+//card
+
+.wrapper-food-card {
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    width: 380px;
+  }
+
+.food-card-content{
+    width: 100px;
+    height: 160px;
+    display: grid;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 0.5px 0px gray;
+    background-color: white;
+    margin: auto 10px;
+}
+
+
+.food-card-content img{
+    margin: 0 auto;
+    position: relative;
+    top: -15px;
+}
+
+
+.food-name{
+    color: $bk-col;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+//card 2 - beer menu
+
+.beer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.beer-menu-card{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.beer-menu-card:hover{background-color: transparent;
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);}
+
+.beer-menu-card img{
+    margin: 20px 30px;
+    width: 110px;
+    overflow: hidden;
+
+}
+
+
+.beer-menu-card-name{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  // padding: 5px 30px;
+  color: #fff;
+  border-radius: 50px;
+  background: transparent;
+  line-height: 50px;
+}
+
+.beer-menu-card:hover a{
+    left: 0;
+}
+
+
+
+
+//cart-select-product card
+
+.cart-select-product{
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 165px);
+    align-items: center;
+    margin: 44px 26px;
+    width: 340px;
+    height:auto;
+    background-color: #fff;
+}
+
+.cart-select-product-left img{
+    width: 90px;
+    margin:10px 0 10px 36px;
+
+
+}
+.cart-select-product-right-p{
+    color: $unacttive-col;
+    text-align: left;
+
+}
+
+
+//cart-select-product-price
+
+.cart-select-product-price{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    font-family: "Actor";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    background: linear-gradient(108.73deg, #F9881F 23.73%, #FF774C 79.34%);
+    width: 342px;
+    height: 215px;
+    border-radius: 1rem;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+   .cart-select-product-price-number{
+    display: flex;
+    justify-content: space-between;
+    gap: 182px;
+    }
+
+    hr.csppn{
+        border-top: 1px solid $text-col;
+    }
+}
+  
+
+
+  
+  

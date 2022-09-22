@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <title>cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Actor&family=Alegreya+Sans+SC:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <script src="./java/script.js"></script>
+  <body>
+    <div class="main-header-logo">
+      <a href="./index.html"><img src="./img/banner/logo.png" alt="" /></a>
+    </div>
+
+    <input type="checkbox" id="active" />
+    <label for="active" class="menu-btn-2"><i class="fas fa-bars"></i></label>
+    <div class="wrapper">
+      <img src="./img/home-hand.png" class="header-img-1" alt="" />
+      <img src="./img/home-necklace.png" class="header-img-2" alt="" />
+      <ul>
+        <img
+          class="nav_logo"
+          src="./img/banner/favicon300.png"
+          width="80px"
+          alt=""
+        />
+        <li><a href="index.html">Home</a></li>
+        <li><a href="queue.html">Your order</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Our Story</a></li>
+      </ul>
+    </div>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Order details</a></li>
+    </ul>
+
+    <div class="cart-select-product">
+      <div class="cart-select-product-left">
+        <img src="./img/beer/Group 4.png" alt="" />
+      </div>
+      <div class="cart-select-product-right">
+        <fieldset>
+          <p class="cart-select-product-right-p">Garlic Parmesan</p>
+          <input type="button" value="-" class="decrease" />
+          <input type="text" id="nine-max" value="0" />
+          <input type="button" value="+" class="increase" />
+        </fieldset>
+      </div>
+      <div class="cart-select-product-left">
+        <img src="./img/beer/440ml-CanLusciousLoompa-400x1088.png" alt="" />
+      </div>
+      <div class="cart-select-product-right">
+        <fieldset>
+          <p class="cart-select-product-right-p">Garlic Parmesan</p>
+          <input type="button" value="-" class="decrease" />
+          <input type="text" id="nine-max" value="0" />
+          <input type="button" value="+" class="increase" />
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="cart-select-product-price">
+      <div class="cart-select-product-price-number">
+        <p class="csppn-p1">Subtotal</p>
+        <p class="csppn-p2">$35.65</p>
+      </div>
+      <div class="cart-select-product-price-number">
+        <p class="csppn-p1" p>GST</p>
+        <p class="csppn-p2" p>$5.35</p>
+      </div>
+      <div class="cart-select-product-price-number">
+        <p class="csppn-p1">Discount</p>
+        <p class="csppn-p2">$0</p>
+      </div>
+      <hr class="csppn" />
+      <div class="cart-select-product-price-number">
+        <p class="csppn-p1" p>Total</p>
+        <p class="csppn-p2" p>$41</p>
+      </div>
+    </div>
+
+    <div class="cont">
+      <button class="btn-click">
+        <span> <a href="./payment.html"> Pay now </a> </span
+        ><img
+          src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png"
+          height="32"
+          width="32"
+        />
+      </button>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-button">
+        <ul>
+          <img class="footer_logo" src="./img/banner/favicon.png" alt="" />
+          <li><a href="queue.html">YOur order</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Our Story </a></li>
+        </ul>
+      </div>
+
+      <button
+        class="akf-button akf-button--text akf-js-response small-button"
+        type="button"
+      >
+        <i class="icon icon-right_small"></i>
+        <span class="akf-button__text">Māori</span>
+      </button>
+      <p class="home-copy">© 2022 Double Vision Brewing Limited</p>
+
+      <button
+        class="akf-button akf-button--text akf-js-response small-button"
+        type="button"
+      >
+        <i class="icon icon-right_small"></i>
+        <span class="akf-button__text"> Privacy Policy&nbsp;&nbsp;</span>
+        <span class="akf-button__text">ㅣ &nbsp;&nbsp; License</span>
+      </button>
+    </footer>
+  </body>
+</html>

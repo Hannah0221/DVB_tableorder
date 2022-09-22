@@ -1,0 +1,106 @@
+.arrowbox{
+  display: flex;
+  justify-self: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 380px;
+  margin: 10px 0px;
+  }
+
+  a:hover .right{
+    border: 0.3rem solid $arrow-bk-col;
+  }
+  
+  a:hover .right:after {
+    border-top: 0.3rem solid $arrow-bk-col;
+    border-right: 0.3rem solid $arrow-bk-col;
+  }
+  
+  .right {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 0.3rem solid $point-col-dark;
+    border-radius: 50%;
+    margin-left: 0rem;
+  }
+  
+  .right:after {
+    content: "";
+    display: inline-block;
+    margin-top: 0.45rem;
+    margin-left: 0.3rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-top: 0.3rem solid $point-col-dark;
+    border-right: 0.3rem solid $point-col-dark;
+    transform: rotate(45deg);
+  }
+
+// .arrow {
+//     cursor: pointer;
+//     height: 32px;
+//     width: 16px;
+//     transform: translateX(-50%) translateY(-50%);
+//     transition: transform .1s;
+//     $transition-time: .15s;
+    
+//     &-top,
+//     &-bottom {
+//       background-color: $point-col-dark;
+//       height: 3px;
+//       left: -5px;
+//       position: absolute;
+//       top: 50%;
+//       width: 100%;
+      
+//       &:after {
+//         background-color: $text-col;
+//         content: '';
+//         height: 100%;
+//         position: absolute;
+//         top: 0;
+//         transition: all $transition-time;
+//       }
+//     }
+    
+//     &-top {
+//       transform: rotate(45deg);
+//       transform-origin: bottom right;
+      
+//       &:after {
+//         left: 100%;
+//         right: 0;
+//         transition-delay: 0s;
+//       }
+//     }
+    
+//     &-bottom {
+//       transform: rotate(-45deg);
+//       transform-origin: top right;
+      
+//       &:after {
+//         left: 0;
+//         right: 100%;
+//         transition-delay: $transition-time;
+//       }
+//     }
+    
+//     &:hover & {
+      
+//       &-top:after {
+//         left: 0;
+//         transition-delay: $transition-time;
+//       }
+  
+//       &-bottom:after {
+//         right: 0;
+//         transition-delay: 0s;
+//       }
+//     }
+    
+//     &:active {
+//       transform: translateX(-50%) translateY(-50%) scale(0.9);
+//     }
+//   }

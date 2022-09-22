@@ -1,0 +1,257 @@
+///launguge button
+.akf-button {
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem auto;
+	padding: .8666666667em 0 .8em;
+	outline: 0;
+    font-family: 'Alegreya Sans SC';
+    font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 2.8125rem;
+	text-align: center;
+	text-decoration: none;
+	white-space: normal;
+	vertical-align: middle;
+	transition: all 0.5s ease;
+	border-radius: .125rem;
+}
+.akf-button,
+.akf-button.is-disabled,
+.akf-button:disabled {
+	color: $text-col;
+	stroke: $text-col;
+	fill: $text-col;
+	border: 1px solid transparent;
+	background: 0 0
+}
+.akf-button--text.hover,
+.akf-button--text:hover { color: #878787; }
+.akf-button.small-button { font-size: 16px; line-height: 18px; padding: 12px 36px 8px 36px; min-width: 10px; }
+.akf-button.small-button .icon { font-size: 32px; width: 36px; line-height: 32px; position: absolute; left: 0; top: 4px; z-index: 1; height: 32px; }
+.ripple { width: 0; height: 0; border-radius: 50%; background: rgba(0, 0, 0, 0.1);
+	transform: scale(0); position: absolute; opacity: 1; z-index: 1;
+}
+.rippleEffect {
+    -webkit-animation: rippleDrop .6s linear; animation: rippleDrop .6s linear;
+}
+@keyframes rippleDrop {
+	100% {
+	  transform: scale(1);
+	  opacity: 0;
+	}
+}
+
+
+
+
+//click button
+
+.cont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 60px auto;
+    // position: absolute;
+    width: 210px;
+    height: 10px;
+    // left: 50%;
+    // top: 50%;
+    // margin: 0;
+    }
+
+.btn-click {
+    border-width: 1px;
+    width: 180px;
+    height: 55px;
+    /*border-radius*/
+    border-radius: 100px;
+    background: $point-col;
+    position: absolute;
+    border: none;
+    }
+
+.btn-click > span {
+    font-size: 26px;
+    color: $text-col;
+    }
+
+.btn-click img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0
+    }
+
+.btn-click:focus {
+    /*animation*/
+    -webkit-animation: extend 1s ease-in-out;
+    -ms-animation: extend 1s ease-in-out;
+    animation: extend 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+.btn-click:focus > span {
+    /*animation*/
+    -webkit-animation: disappear 1s ease-in-out;
+    -ms-animation: disappear 1s ease-in-out;
+    animation: disappear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+.btn-click:focus > img {
+    /*animation*/
+    -webkit-animation: appear 1s ease-in-out;
+    -ms-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+.btn-click a:link,a:visited,a:active{
+    color: $text-col;
+    text-decoration: none;
+}
+
+
+
+	@-webkit-keyframes extend {
+		0% {
+			
+			width: 200px;
+			height: 60px;
+			border-radius: 100px;
+			} 10% {
+			width: 210px;
+			height: 90px;
+			background: $point-tect-col;
+			margin-left: - 5px;
+			margin-top: - 5px;
+			} 20% {
+			width: 200px;
+			height: 60px;
+			background: $point-col;
+			margin-left: 0px;
+			margin-top: 0px;
+			} 100% {
+			width: 80px;
+			height: 80px;
+			margin-left: 0px;
+			margin-top: 0px;
+			background: $point-col;
+			}
+		}
+	@keyframes extend {
+		0% {
+			width: 210px;
+			height: 80px;
+        border-radius: 100px;
+        } 10% {
+			width: 230px;
+			height: 90px;
+        background: $point-col;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+			width: 210px;
+			height: 80px;
+        background: $point-col;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+			margin-top: 0px;
+        background: $point-col;
+			}
+		}
+	
+	@-webkit-keyframes disappear {
+		0% {
+			opacity: 1;
+			} 20% {
+			color: #fff;
+			} 100% {
+			opacity: 0;
+			}
+		}
+	@keyframes disappear {
+		0% {
+			opacity: 1;
+			} 20% {
+			color: #fff;
+			} 100% {
+			opacity: 0;
+			}
+		}
+
+	@-webkit-keyframes appear {
+		0% {
+			opacity: 0;
+			} 70% {
+			opacity: 0;
+			} 100% {
+			opacity: 1;
+			}
+		}
+	@keyframes appear {
+		0% {
+			opacity: 0;
+			} 70% {
+			opacity: 0;
+			} 100% {
+			opacity: 1;
+			}
+		}
+
+
+
+// quantity btn
+
+
+form {
+    background-color: transparent;
+    width: 150px;
+}
+legend {
+    padding-bottom: 14px;
+    text-align: left;
+}
+fieldset {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+fieldset, input[type="button"] {
+    border: 0;
+}
+input[type="button"] {
+    background-color: #ED5A48;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin: 0 2px;
+}
+input[type="text"] {
+    border: 1px solid #F4F3F3;
+    border-radius: 5px;
+    text-align: center;
+    height: 22px;
+    width: 50px;
+}

@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+// html {
+//   box-sizing: border-box;
+// }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+
+$point-col-dark:#ff774c;
+$point-col:linear-gradient(108.73deg, #F9881F 23.73%, #FF774C 79.34%);
+$text-col:white;
+$point-tect-col:#EFAA11;
+$back-col:rgba(22, 38, 51, 1);
+$bk-col:black;
+$arrow-bk-col:white;
+$unacttive-col:rgb(146, 145, 145);
+$alert: #ff6a96;
+
+
+
+//Quantity
+$main-off: transparent;
+$color-font: #ff774c; 
+$color-null: white;
+$color-text: #ff774c;
+
